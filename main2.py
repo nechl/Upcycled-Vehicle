@@ -5,10 +5,7 @@ Programm by Daniel Huber and Nicolas Perruchoud
 
 * : high
 _ : low
-24 1
-23 2
-25 3
-22 4
+
 	 dl dr pl pr
 Pin numb:22 23 24 25
 strgt -> _  _  *  *
@@ -72,8 +69,8 @@ if __name__ == '__main__':
                 mouse = io.open("/dev/input/mouse0", mode="r") # read mouse input
                 Main()
         except Exception as e:
-	#display errormessage
-                print("Oops, err: ", e) # mostly for debugging
+	#display error message, for debbuging
+                print("Err: ", e) # mostly for debugging
                 exit(-1)
 
 
