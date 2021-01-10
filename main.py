@@ -5,7 +5,7 @@ Programm by Daniel Huber and Nicolas Perruchoud
 
 * : high
 _ : low
-not in a good order due to soldering issues
+logic table for driving
          A1 A2 B1 B2
 front -> *  _  *  _
 left  -> _  *  *  _
