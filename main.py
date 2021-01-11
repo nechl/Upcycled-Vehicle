@@ -27,7 +27,7 @@ def Main() -> None:
                         B1 = 0 
                         B2 = 1
 
-                elif v == '\t\x00\x00\x08\x00\x00':		# left mouse button is pressed	
+                elif v == '\t\x00\x00\x08\x00\x00': #left mouse button is pressed	
                         # direction l ->, r <-
                         A1 = 0        
                         A2 = 1
@@ -55,15 +55,10 @@ def Main() -> None:
                 GPIO.output(22, B1)     
                 GPIO.output(25, B2)
 
-                
-
-
-
-
 if __name__ == '__main__':
         try:
                 GPIO.setwarnings(False)
-                # setting up pins
+                # setting up pins & pin layout
                 GPIO.setmode(GPIO.BCM)
                 GPIO.setup(22, GPIO.OUT) # direction left wheel
                 GPIO.setup(23, GPIO.OUT) # direction right wheel
