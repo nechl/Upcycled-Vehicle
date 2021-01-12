@@ -27,6 +27,7 @@ def Main() -> None:
                         A2 = 0
                         B1 = 0 
                         B2 = 1
+                        turningLeft = False
                         turningRight = True
 
                 elif v == '\t\x00\x00\x08\x00\x00' and turningLeft == False: #left mouse button is pressed	, only if not turning right now
@@ -36,12 +37,14 @@ def Main() -> None:
                         B1 = 1 
                         B2 = 0
                         turningLeft = True
+                        turningRight = False
                 
                 elif v == '\n\x00\x00\x08\x00\x00'and turningRight == True:
                         A1 = 0
                         A2 = 0
                         B1 = 0
                         B2 = 0
+                        turningLeft = False
                         turningRight = False
 
                 elif v == '\t\x00\x00\x08\x00\x00' and turningLeft == True:
@@ -49,6 +52,7 @@ def Main() -> None:
                         A2 = 0
                         B1 = 0
                         B2 = 0
+                        turningRight = False
                         turningLeft = False   
                                            
                 elif v == '\x08\x00\x00\x08\x00\x00':	# middle mouse button is rolled
@@ -59,6 +63,8 @@ def Main() -> None:
                         A2 = 0
                         B1 = toggle_val 
                         B2 = 0
+                        turningLeft = False
+                        turningRight = False
 
                 else:
                         print("Invalid io read: ", v)
