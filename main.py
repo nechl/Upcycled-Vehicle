@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import io, RPi.GPIO as GPIO
 """
-Programm by Daniel Huber and Nicolas Perruchoud
+Programm by Daniel Huber and Nicolas Perruchoud, 2020
 
 * : high
 _ : low
