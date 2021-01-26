@@ -2,7 +2,7 @@
 import io, RPi.GPIO as GPIO
 """
 Programm by Daniel Huber and Nicolas Perruchoud, 2020
-
+This program is used to steer 2 DC motors via a radio mouse.
 * : high
 _ : low
 logic table for driving
