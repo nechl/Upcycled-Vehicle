@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 import io, RPi.GPIO as GPIO
 """
-Programm by Daniel Huber and Nicolas Perruchoud, 2020
+Programm by Daniel Huber and Nicolas Perruchoud, 2020. 
+To use it properly, highly recommended to add it to startup when using a RPI
 This program is used to steer 2 DC motors via a radio mouse.
+
 * : high
 _ : low
 logic table for driving
